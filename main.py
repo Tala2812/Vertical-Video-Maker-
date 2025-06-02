@@ -22,7 +22,6 @@ class TransitionType(Enum):
     SLIDE_DOWN = 3
 
 
-
 def select_files():
     """Открывает диалог выбора файлов"""
     root = Tk()
@@ -54,9 +53,9 @@ def select_transition_type():
         "1. Плавное затухание\n"
         "2. Сдвиг вправо\n"
         "3. Сдвиг вниз\n"
-        
-        
-    
+
+
+
 
         "Введите номер (1-3):",
         minvalue=1,
@@ -68,7 +67,6 @@ def select_transition_type():
         TransitionType.FADE,
         TransitionType.SLIDE_RIGHT,
         TransitionType.SLIDE_DOWN,
-
 
     ]
 
@@ -262,7 +260,7 @@ def main():
                 raise ValueError("Не выбраны изображения")
             if not audio:
                 print("Аудиофайл не выбран.Видео будет без звука.")
-        elif choice == "2": # Тестовые файлы
+        elif choice == "2":  # Тестовые файлы
             images = [
                 r"C:\Users\Константин\Pictures\Saved Pictures\photo1.jpg.jpg",
                 r"C:\Users\Константин\Pictures\Saved Pictures\photo2.jpg.jpg",
